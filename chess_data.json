@@ -1,0 +1,268 @@
+{
+  "countries": [
+    {
+      "Country": "United States",
+      "Average_Rating": 2729,
+      "Top10_Players": 12,
+      "Total_GMs": 101,
+      "Population_Millions": 323.1
+    },
+    {
+      "Country": "India",
+      "Average_Rating": 2725,
+      "Top10_Players": 10,
+      "Total_GMs": 82,
+      "Population_Millions": 1380.0
+    },
+    {
+      "Country": "China",
+      "Average_Rating": 2673,
+      "Top10_Players": 6,
+      "Total_GMs": 53,
+      "Population_Millions": 1439.3
+    },
+    {
+      "Country": "Russia",
+      "Average_Rating": 2653,
+      "Top10_Players": 6,
+      "Total_GMs": 256,
+      "Population_Millions": 145.9
+    },
+    {
+      "Country": "Germany",
+      "Average_Rating": 2631,
+      "Top10_Players": 4,
+      "Total_GMs": 118,
+      "Population_Millions": 83.8
+    },
+    {
+      "Country": "Ukraine",
+      "Average_Rating": 2631,
+      "Top10_Players": 3,
+      "Total_GMs": 108,
+      "Population_Millions": 44.0
+    },
+    {
+      "Country": "France",
+      "Average_Rating": 2629,
+      "Top10_Players": 4,
+      "Total_GMs": 49,
+      "Population_Millions": 65.3
+    },
+    {
+      "Country": "Azerbaijan",
+      "Average_Rating": 2626,
+      "Top10_Players": 3,
+      "Total_GMs": 26,
+      "Population_Millions": 10.1
+    },
+    {
+      "Country": "Hungary",
+      "Average_Rating": 2622,
+      "Top10_Players": 4,
+      "Total_GMs": 48,
+      "Population_Millions": 9.7
+    },
+    {
+      "Country": "Netherlands",
+      "Average_Rating": 2619,
+      "Top10_Players": 4,
+      "Total_GMs": 34,
+      "Population_Millions": 17.4
+    },
+    {
+      "Country": "Spain",
+      "Average_Rating": 2614,
+      "Top10_Players": 4,
+      "Total_GMs": 52,
+      "Population_Millions": 46.8
+    },
+    {
+      "Country": "Armenia",
+      "Average_Rating": 2612,
+      "Top10_Players": 4,
+      "Total_GMs": 40,
+      "Population_Millions": 3.0
+    },
+    {
+      "Country": "Uzbekistan",
+      "Average_Rating": 2599,
+      "Top10_Players": 5,
+      "Total_GMs": 11,
+      "Population_Millions": 33.9
+    },
+    {
+      "Country": "Poland",
+      "Average_Rating": 2593,
+      "Top10_Players": 0,
+      "Total_GMs": 40,
+      "Population_Millions": 37.8
+    },
+    {
+      "Country": "Norway",
+      "Average_Rating": 2593,
+      "Top10_Players": 3,
+      "Total_GMs": 11,
+      "Population_Millions": 5.4
+    },
+    {
+      "Country": "England",
+      "Average_Rating": 2590,
+      "Top10_Players": 4,
+      "Total_GMs": 35,
+      "Population_Millions": 56.3
+    },
+    {
+      "Country": "Israel",
+      "Average_Rating": 2586,
+      "Top10_Players": 0,
+      "Total_GMs": 41,
+      "Population_Millions": 9.4
+    },
+    {
+      "Country": "Serbia",
+      "Average_Rating": 2570,
+      "Top10_Players": 3,
+      "Total_GMs": 49,
+      "Population_Millions": 8.9
+    },
+    {
+      "Country": "Turkey",
+      "Average_Rating": 2566,
+      "Top10_Players": 0,
+      "Total_GMs": 8,
+      "Population_Millions": 84.3
+    },
+    {
+      "Country": "Romania",
+      "Average_Rating": 2565,
+      "Top10_Players": 0,
+      "Total_GMs": 19,
+      "Population_Millions": 19.3
+    }
+  ],
+  "top_players": [
+    {
+      "Rank": 1,
+      "Name": "Magnus Carlsen",
+      "Country": "Norway",
+      "Rating": 2839
+    },
+    {
+      "Rank": 2,
+      "Name": "Hikaru Nakamura",
+      "Country": "United States",
+      "Rating": 2807
+    },
+    {
+      "Rank": 3,
+      "Name": "Fabiano Caruana",
+      "Country": "United States",
+      "Rating": 2784
+    },
+    {
+      "Rank": 4,
+      "Name": "R Praggnanandhaa",
+      "Country": "India",
+      "Rating": 2779
+    },
+    {
+      "Rank": 5,
+      "Name": "Arjun Erigaisi",
+      "Country": "India",
+      "Rating": 2776
+    },
+    {
+      "Rank": 6,
+      "Name": "Gukesh Dommaraju",
+      "Country": "India",
+      "Rating": 2776
+    },
+    {
+      "Rank": 7,
+      "Name": "Nodirbek Abdusattorov",
+      "Country": "Uzbekistan",
+      "Rating": 2771
+    },
+    {
+      "Rank": 8,
+      "Name": "Alireza Firouzja",
+      "Country": "France",
+      "Rating": 2766
+    },
+    {
+      "Rank": 9,
+      "Name": "Wei Yi",
+      "Country": "China",
+      "Rating": 2748
+    },
+    {
+      "Rank": 10,
+      "Name": "Anish Giri",
+      "Country": "Netherlands",
+      "Rating": 2748
+    },
+    {
+      "Rank": 11,
+      "Name": "Shakhriyar Mamedyarov",
+      "Country": "Azerbaijan",
+      "Rating": 2746
+    },
+    {
+      "Rank": 12,
+      "Name": "Wesley So",
+      "Country": "United States",
+      "Rating": 2745
+    },
+    {
+      "Rank": 13,
+      "Name": "Viswanathan Anand",
+      "Country": "India",
+      "Rating": 2743
+    },
+    {
+      "Rank": 14,
+      "Name": "Ian Nepomniachtchi",
+      "Country": "Russia",
+      "Rating": 2742
+    },
+    {
+      "Rank": 15,
+      "Name": "Levon Aronian",
+      "Country": "United States",
+      "Rating": 2742
+    },
+    {
+      "Rank": 16,
+      "Name": "Vladimir Fedoseev",
+      "Country": "Russia",
+      "Rating": 2739
+    },
+    {
+      "Rank": 17,
+      "Name": "Leinier Dom\u00ednguez P\u00e9rez",
+      "Country": "Cuba",
+      "Rating": 2738
+    },
+    {
+      "Rank": 18,
+      "Name": "Maxime Vachier-Lagrave",
+      "Country": "France",
+      "Rating": 2736
+    },
+    {
+      "Rank": 19,
+      "Name": "Hans Niemann",
+      "Country": "United States",
+      "Rating": 2736
+    },
+    {
+      "Rank": 20,
+      "Name": "Ding Liren",
+      "Country": "China",
+      "Rating": 2734
+    }
+  ],
+  "last_updated": "July 2025",
+  "data_source": "FIDE Official Rankings"
+}

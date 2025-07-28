@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Chess Rankings Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <h1 class="header__title">Global Chess Rankings Dashboard</h1>
+                <p class="header__subtitle">Last updated: July 2025 | Source: FIDE Official Rankings</p>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="container">
+                <div class="nav__tabs">
+                    <button class="nav__tab nav__tab--active" data-tab="countries">Country Rankings</button>
+                    <button class="nav__tab" data-tab="players">Top Players</button>
+                    <button class="nav__tab" data-tab="statistics">Statistics</button>
+                </div>
+                <button class="btn btn--outline export-btn">Export Data</button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main">
+            <div class="container">
+                <!-- Country Rankings Tab -->
+                <div class="tab-content tab-content--active" id="countries-tab">
+                    <div class="tab-header">
+                        <h2>Country Rankings</h2>
+                        <div class="controls">
+                            <input type="text" class="form-control search-input" placeholder="Search countries..." id="country-search">
+                        </div>
+                    </div>
+                    
+                    <div class="summary-stats">
+                        <div class="stat-card">
+                            <div class="stat-card__value" id="total-countries">20</div>
+                            <div class="stat-card__label">Countries Tracked</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value" id="total-gms">1,481</div>
+                            <div class="stat-card__label">Total Grandmasters</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value" id="avg-top10">2,643</div>
+                            <div class="stat-card__label">Avg Rating (Top 10)</div>
+                        </div>
+                    </div>
+
+                    <div class="table-container">
+                        <table class="rankings-table" id="countries-table">
+                            <thead>
+                                <tr>
+                                    <th data-sort="rank">Rank</th>
+                                    <th data-sort="country">Country</th>
+                                    <th data-sort="rating">Average Rating</th>
+                                    <th data-sort="top10">Top 10 Players</th>
+                                    <th data-sort="gms">Total GMs</th>
+                                    <th data-sort="efficiency">GMs per Million</th>
+                                </tr>
+                            </thead>
+                            <tbody id="countries-tbody">
+                                <!-- Data will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Top Players Tab -->
+                <div class="tab-content" id="players-tab">
+                    <div class="tab-header">
+                        <h2>Top Chess Players</h2>
+                        <div class="controls">
+                            <select class="form-control" id="country-filter">
+                                <option value="">All Countries</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="players-grid" id="players-grid">
+                        <!-- Player cards will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Statistics Tab -->
+                <div class="tab-content" id="statistics-tab">
+                    <div class="tab-header">
+                        <h2>Chess Statistics & Analytics</h2>
+                    </div>
+
+                    <div class="stats-overview">
+                        <div class="stats-grid">
+                            <div class="metric-card">
+                                <h3>Global Overview</h3>
+                                <div class="metric-item">
+                                    <span class="metric-label">Total GMs Worldwide</span>
+                                    <span class="metric-value">1,481</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="metric-label">Average Rating (Top 10 Countries)</span>
+                                    <span class="metric-value">2,643</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="metric-label">Countries with 50+ GMs</span>
+                                    <span class="metric-value">7</span>
+                                </div>
+                            </div>
+
+                            <div class="metric-card">
+                                <h3>Top Performers</h3>
+                                <div class="metric-item">
+                                    <span class="metric-label">Highest Rating</span>
+                                    <span class="metric-value">2,839 (Magnus Carlsen)</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="metric-label">Most GMs</span>
+                                    <span class="metric-value">256 (Russia)</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="metric-label">Best GM Density</span>
+                                    <span class="metric-value">13.33 per Million (Armenia)</span>
+                                </div>
+                            </div>
+
+                            <div class="metric-card">
+                                <h3>Population Efficiency</h3>
+                                <div class="metric-item">
+                                    <span class="metric-label">Most Efficient (Small Nations)</span>
+                                    <span class="metric-value">Armenia (13.33/M)</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="metric-label">Most Efficient (Large Nations)</span>
+                                    <span class="metric-value">Ukraine (2.45/M)</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="metric-label">Emerging Chess Powers</span>
+                                    <span class="metric-value">India, Uzbekistan</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="charts-section">
+                            <div class="chart-container">
+                                <h3>Average Rating by Country</h3>
+                                <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/e1761a4fb272497c41c43c0c50a4c0ad/ebd1b4f9-a8f2-4d8a-be75-6511750e975c/a37ec0c9.png" alt="Top countries by average chess rating" class="chart-image">
+                            </div>
+                            <div class="chart-container">
+                                <h3>Grandmaster Distribution</h3>
+                                <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/e1761a4fb272497c41c43c0c50a4c0ad/cf69012f-f994-4127-b302-768bd48ac095/f79758e8.png" alt="Distribution of chess grandmasters by country" class="chart-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Tooltip -->
+        <div class="tooltip" id="tooltip">
+            <div class="tooltip__content"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
